@@ -5,7 +5,7 @@ pipeline {
     parameters {
         string(name: 'branch', defaultValue: 'main', description: 'Git branch to build')
         string(name: 'environment', defaultValue: 'dev', description: 'Environment to deploy')
-        string(name: 'SLACK_CHANNEL', defaultValue: '#chatops', description: 'Slack channel for notifications')
+        string(name: 'SLACK_CHANNEL', defaultValue: '#devops', description: 'Slack channel for notifications')
     }
     environment {
         PORT = '3001'
